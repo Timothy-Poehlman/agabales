@@ -2,12 +2,9 @@ import React from 'react';
 import './App.css';
 import {Switch, Route, Link} from 'react-router-dom';
 import About from './Content/About'
-import Converter from './Content/Converter'
 import Lightbulb from './Content/Lightbulb'
 import Microshell from './Content/Microshell'
-import Based from './Content/Based'
 import resume from './Resume/Resume.pdf'
-import OS from './Content/OS'
 import ScrollToTop from '../src/Utility/ScrolltoTop'
 import { SideBarDropDown ,SideTabContainer, SideTab, TagCloud, TagCloudLink, ListLink, ListDescription, Credentials} from './Components';
 
@@ -32,15 +29,10 @@ ScrollToTop();
             <Route path='/lightbulb' component={Lightbulb}>
               
             </Route>
-            <Route path='/converter' component={Converter}>
-            </Route>
             <Route path='/microshell' component={Microshell}>
-             
-            </Route>
-            <Route path='/based26' component={Based}>
             </Route>
 
-            <Route path='/OS' component={OS}>
+            <Route path='/publication_and_pattern_quality (TBA)' component={About}>
             </Route>
 
             <Route component={About}></Route>
@@ -64,46 +56,24 @@ ScrollToTop();
                   <ListLink href='https://github.com/wwu-csci-497/bettercrative' content='Github'><span className="text-success">(Public)</span></ListLink>
               </SideBarDropDown>
 
-              <SideBarDropDown id='description-youtube_to_spotify'  yt='mr-2 fa fa-youtube-play project-item-size' spotify='fa fa-spotify project-item-size mx-2' >
-                  <ListDescription href='/converter' id='description-youtube_to_spotify' content='Description'></ListDescription>
-                  <ListLink href='https://github.com/adrian-23/YT-Playlist---Spotify-Playlist-Converter' content='Github'><span className="text-success">(Public)</span></ListLink>
-              </SideBarDropDown>
-
               <SideBarDropDown id='description-Microshell' title='Microshell' logo='mr-2 fa fa-linux project-item-size'>
                   <ListDescription href='/microshell' id='description-Microshell' content='Description'></ListDescription>
                   <ListLink  content='Github'><span className="text-danger">(Private)</span></ListLink>
               </SideBarDropDown>
 
-
-              <SideBarDropDown id='description-deadwood' title='Deadwood' logo='mr-2 fa fa-gamepad project-item-size'>
-                  <ListDescription href='#in_progress' id='description-based26' content='Description'> <span className="text-success">(In Progress...)</span></ListDescription>
-                  <ListLink content='Github'><span className="text-danger">(Private)</span></ListLink>
+              <SideBarDropDown id='description-publication_and_pattern_quality' title='publication_and_pat...' logo='mr-2 fa fa-linux project-item-size'>
+                  <ListDescription href='/' id='description-publication_and_pattern_quality' content='publication_and_pattern_quality (TBA)'></ListDescription>
+                  <ListLink  content='Github'><span className="text-danger">(Private)</span></ListLink>
               </SideBarDropDown>
 
-
-            </SideTab>
-
-
-            <SideTab title='Fun Problems'>
-                
-                <SideBarDropDown id='description-based26' title='Based26' logo='mr-2 fa fa-sort-alpha-asc project-item-size'>
-                  <ListDescription href='/based26' id='description-based26' content='Description'> </ListDescription>
-                  <ListLink href='https://github.com/adrian-23/Based26'  content='Github'></ListLink>
-                </SideBarDropDown>
-            </SideTab>
-
-            <SideTab title='Class Notes'>
-              <SideBarDropDown id='description-OS' title='Operating Systems' logo='mr-2 fa fa-cogs	project-item-size'>
-                <ListDescription href='/OS' id='description-OS' content='Notes'></ListDescription>
-              </SideBarDropDown>
             </SideTab>
 
             <Credentials>
               <TagCloud>
-                <TagCloudLink href='mailto:adriangabales1@gmail.com' button_desc='fa fa-envelope mail' content=''></TagCloudLink>
-                <TagCloudLink href='https://github.com/adrian-23' button_desc='fa fa-github' content=''></TagCloudLink>
-                <TagCloudLink href='https://www.linkedin.com/in/adrian-gabales/' button_desc='fa fa-linkedin mail' content=''></TagCloudLink>
+                <TagCloudLink href='https://github.com/Timothy-Poehlman' button_desc='fa fa-github' content=''></TagCloudLink>
+                <TagCloudLink href='https://www.linkedin.com/in/Timothy-Poehlman/' button_desc='fa fa-linkedin mail' content=''></TagCloudLink>
                 <TagCloudLink href={resume} button_desc='' content='CV'></TagCloudLink>
+                <TagCloudLink href='mailto:timothypoehlman@gmail.com' content='timothypoehlman@gmail.com'></TagCloudLink>
               </TagCloud>
             </Credentials>
             
